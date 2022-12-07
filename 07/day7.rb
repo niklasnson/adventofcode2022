@@ -20,8 +20,8 @@ end
 
 puts  "Q1: #{ dirs.values.select { |size| size < 100_000 }.sum }"
 
-USED = dirs[["/"]]
-TARGET = USED - (70_000_000-30_000_000)
+used = dirs[["/"]]
+target = used - (70_000_000-30_000_000)
 
-puts "Q2: #{dirs.values.sort.detect { |size| size >= TARGET } }"
+puts "Q2: #{dirs.values.sort.detect { |size| size >= target } }"
 
